@@ -56,7 +56,7 @@
         margin: 10px auto;
         padding: 6px 0 0 6px;
         border: solid black 1px;
-        background: linear-gradient(to right, rgb(173, 88, 88), rgb(87, 23, 23));
+        background: linear-gradient(to right, rgb(133, 68, 68), rgb(121, 29, 29));
     }
     section.row {
         display: flex;
