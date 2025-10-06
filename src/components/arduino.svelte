@@ -7,7 +7,7 @@
         leds[row][column] = !leds[row][column]
         leds = [...leds]
     }
-    $: arduinoMsg = leds.reduce((acc, value) => {
+    $: arduinoMsg = [...leds].reverse().reduce((acc, value) => {
         return acc + value.map(l => l?'1':'0').join(':') + ':';
     }, '').slice(0, -1);
 </script>
@@ -31,6 +31,7 @@
         margin: 5px;
         border: solid black 1px;
         background-color: #c0bfbf;
+        cursor: pointer;
     }
     div.on {
         background-color: #AA0000;
@@ -50,7 +51,7 @@
         margin: 10px auto;
         font-weight: 700;
     }
-    
+
 </style>
 
 <h1>LED MATRIX [ARDUINO]</h1>
