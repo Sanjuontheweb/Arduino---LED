@@ -139,6 +139,3 @@
 <section id="message">
     {arduinoMsg}
 </section>
-
-<!-- Basically, u create an array 0-8 which each contain another array of 0-8
- loop through each array and  -->
